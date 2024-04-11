@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reinigungsservice-Hachem</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc2b2583ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light custom-nav-bar p-0 fixed-top bg-light"
+    >
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="./img/Logo.jpg" alt="logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-0" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-btn"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-btn"
+                aria-current="page"
+                href="home.html"
+                >Über uns</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-btn" href="#" id="dienstleistungen"
+                >Dienstleistungen</a
+              >
+            </li>
+            <div class="submenu-mobile" id="submenu-mobile">
+              <a href="buero.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-house-chimney custom-icons"></i>
+                  </span>
+                  Büroreinigung
+                </p>
+              </a>
+              <a href="glasfenster.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-regular fa-window-maximize custom-icons"></i>
+                  </span>
+                  Glas-und Fensterreinugung
+                </p>
+              </a>
+              <a href="grundsonder.html" class="a-submenu">
+                <p>
+                  <span class="custom-img-container">
+                    <img class="custom-icons-img" src="./img/son.png" alt="" />
+                  </span>
+                  Grund-und Sonderreinigung
+                </p>
+              </a>
+              <a href="trepp.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-stairs custom-icons"></i>
+                  </span>
+                  Treppenhausreinigung
+                </p>
+              </a>
+              <a href="grünanlagenpflege.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-sun-plant-wilt custom-icons"></i>
+                  </span>
+                  Grünanlagenpflege
+                </p>
+              </a>
+              <a href="hau.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-user-gear custom-icons"></i>
+                  </span>
+                  Hausmeisterservice
+                </p>
+              </a>
+              <a href="ind.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-screwdriver-wrench custom-icons"></i>
+                  </span>
+                  Industriereinigung
+                </p>
+              </a>
+              <a href="bauend.html" class="a-submenu">
+                <p>
+                  <span class="custom-img-container">
+                    <img
+                      class="custom-icons-img"
+                      src="./img/bauend.png"
+                      alt=""
+                    />
+                  </span>
+                  Bauendreinigung
+                </p>
+              </a>
+              <div
+                class="col-lg-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="card" style="width: 18rem">
+                  <img src="./img/kontakt.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">
+                      Ist Ihre Anfrage hier nicht aufgeführt, so kontaktieren
+                      Sie uns:
+                    </p>
+                    <a href="#" class="btn btn-primary">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" id="branchenlösungen" href="#">Kontakt</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="ange.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Karriere</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="theme px-3">
+        <img src="./img/dark.png" class="theme-icon" id="themeIcon" alt="">
+        
+        </div>
+    </nav>
+    <div class="main-body">
+      <div class="container d-flex justify-content-center">
+        <div class="submenu container p-2" id="submenu">
+          <div class="container">
+            <div class="row submenu-content">
+              <div class="col-lg-4 left-menü">
+                <a href="buero.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-house-chimney custom-icons"></i>
+                    </span>
+                    Büroreinigung
+                  </p>
+                </a>
+                <a href="glasfenster.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-regular fa-window-maximize custom-icons"></i>
+                    </span>
+                    Glas-und Fensterreinugung
+                  </p>
+                </a>
+                <a href="trepp.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-stairs custom-icons"></i>
+                    </span>
+                    Treppenhausreinigung
+                  </p>
+                </a>
+                <a href="grundsonder.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span class="img-icon">
+                      <img
+                        class="custom-icons-img"
+                        src="./img/son.png"
+                        alt=""
+                      />
+                    </span>
+                    Grund-und-Sonderreinigung
+                  </p>
+                </a>
+              </div>
+              <div class="col-lg-4 right-menü">
+                <a href="grünanlagenpflege.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-sun-plant-wilt custom-icons"></i>
+                    </span>
+                    Grünanlagenpflege
+                  </p>
+                </a>
+                <a href="hau.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-user-gear custom-icons"></i>
+                    </span>
+                    Hausmeisterservice
+                  </p>
+                </a>
+                <a href="ind.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i
+                        class="fa-solid fa-screwdriver-wrench custom-icons"
+                      ></i>
+                    </span>
+                    Industriereinigung
+                  </p>
+                </a>
+
+                <a href="bauend.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span class="img-icon">
+                      <img
+                        class="custom-icons-img"
+                        src="./img/bauend.png"
+                        alt=""
+                      />
+                    </span>
+                    Bauendreinigung
+                  </p>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="card" style="width: 18rem">
+                  <img src="./img/kontakt.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">
+                      Ist Ihre Anfrage hier nicht aufgeführt, so kontaktieren
+                      Sie uns:
+                    </p>
+                    <a href="#" class="btn btn-primary">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid d-flex justify-content-center bg-dark">
+        <img src="./img/contact.jpg" alt="" />
+      </div>
+      <div class="container mt-5">
+        <h3 class="text-center text-primary">
+          Schön das ist uns Kontaktieren möchten.
+        </h3>
+        <p class="fw-bold">
+          Wir sind Wochentags über zwischen 9:00-17:00 Uhr über folgende Kanäle
+          oder unser Kontaktformular erreichbar.
+        </p>
+      </div>
+      <div class="d-flex justify-content-center">
+        <div class="row px-3 container">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://cdn.pixabay.com/photo/2021/08/14/08/18/sunflowers-6544826_640.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wuppertal</h5>
+              <a
+                target="_blank"
+                href="https://www.google.com/maps/place/Ludgerweg+21,+42329+Wuppertal/@51.2205288,7.0424022,15z/data=!3m1!4b1!4m6!3m5!1s0x47b8d15847ae04bd:0x934b66db9b9435ce!8m2!3d51.2205158!4d7.0527019!16s%2Fg%2F11sb97cqrt?entry=ttu"
+                >Ludgerweg 21 42329 Wuppertal</a
+              >
+              <p class="card-text">
+                Tel.: 01732765432 <br />
+                E-mail.: a.hachem@gmx.de
+              </p>
+              <a href="kontakt.html" class="btn btn-primary">Konktakt</a>
+            </div>
+          </div>
+          <div class="col d-flex align-items-center flex-column">
+            <img src="./img/QR Code.png" class="qr-code" alt="" />
+            <p class="text-center qr-name">Whatsapp Nummer</p>
+          </div>
+        </div>
+      </div>
+      <div class="container maps d-flex p-3 align-items-center flex-column">
+        <a
+          class="p-2"
+          target="_blank"
+          href="https://www.google.com/maps/place/Ludgerweg+21,+42329+Wuppertal/@51.2205288,7.0424022,15z/data=!3m1!4b1!4m6!3m5!1s0x47b8d15847ae04bd:0x934b66db9b9435ce!8m2!3d51.2205158!4d7.0527019!16s%2Fg%2F11sb97cqrt?entry=ttu"
+          >Address: Ludgerweg 21 42329 Wuppertal</a
+        >
+
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9995.684469655265!2d7.0424021823689555!3d51.22052878750198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8d15847ae04bd%3A0x934b66db9b9435ce!2sLudgerweg%2021%2C%2042329%20Wuppertal!5e0!3m2!1sfr!2sde!4v1708780026121!5m2!1sfr!2sde"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <form class="container p-5">
+        <div>
+          <label class="form-label" for="firma">Firma:</label>
+          <input class="form-control" id="firma" type="text" />
+        </div>
+        <div class="py-2">
+          <div>
+            <label class="form-label" for="anrede">Anrede:</label>
+          </div>
+
+          <div class="form-check form-check-inline">
+            <input
+              name="anrede"
+              value="herr"
+              id="herr"
+              class="form-check-input"
+              type="radio"
+            />
+            <label class="form-check-label" for="herr">Herr</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="anrede"
+              value="frau"
+              id="frau"
+              class="form-check-input"
+              type="radio"
+            />
+            <label class="form-check-label" for="frau">Frau</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input
+              name="anrede"
+              value="divers"
+              id="divers"
+              class="form-check-input"
+              type="radio"
+            />
+            <label class="form-check-label" for="divers">Divers</label>
+          </div>
+        </div>
+        <div>
+          <label class="form-label" for="name"
+            >Name:<span class="kreuz">*</span></label
+          >
+          <input class="form-control" id="name" type="text" />
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="form-label" for="name"
+              >Straße.Nr.:<span class="kreuz"></span
+            ></label>
+            <input class="form-control" id="name" type="text" />
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label" for="name"
+              >PLZ, Ort:<span class="kreuz"></span
+            ></label>
+            <input class="form-control" id="name" type="text" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <label class="form-label" for="name"
+              >Telefon:<span class="kreuz"></span
+            ></label>
+            <input class="form-control" id="name" type="text" />
+          </div>
+          <div class="col-lg-6">
+            <label class="form-label" for="name"
+              >E-Mail:<span class="kreuz">*</span></label
+            >
+            <input class="form-control" id="name" type="text" />
+          </div>
+        </div>
+        <div>
+          <label class="form-label" for="comment"
+            >Ihre Nachricht:<span class="kreuz">*</span></label
+          >
+          <textarea
+            class="form-control"
+            name="comment"
+            id="comment"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="py-2">
+          <p class="kreuz-datei">Dateiupload:</p>
+          <input
+            class="datei-name p-2"
+            type="file"
+            id="myFile"
+            name="filename"
+          />
+          <input class="submit-name btn btn-primary my-2" type="submit" />
+        </div>
+      </form>
+      <div class="container mt-2">
+        <h1 class="text-center text-primary">Kontakt.:</h1>
+        <p>
+          Unsere Zusammenarbeit: Unmittelbar nach Ihrer Anfrage oder
+          Auftragserteilung erhalten Sie von uns eine persönliche Rückmeldung.
+          Wir arbeiten gemeinsam an der Erstellung des Leistungsverzeichnisses
+          und kalkulieren den entsprechenden Preis. Falls erforderlich, um
+          mehrere Gewerke zu kombinieren, halten wir Sie kontinuierlich auf dem
+          Laufenden und geben regelmäßiges Feedback. Während unserer
+          Zusammenarbeit bleiben wir eng mit Ihnen in Kontakt. Wir erkundigen
+          uns regelmäßig nach Ihrer Zufriedenheit und führen bei Bedarf
+          Vor-Ort-Besichtigungen durch. Ein entscheidender Vorteil von
+          Reinigungsservice Hachem liegt in unserer inhabergeführten Struktur.
+          Diese ermöglicht es uns, schnell und entschieden zu handeln. Flache
+          Hierarchien innerhalb unseres Unternehmens garantieren kurze
+          Entscheidungswege. Seit über 40 Jahren sind wir erfolgreich im Bereich
+          professioneller Reinigungsdienstleistungen tätig und können auf
+          langjährige Erfahrung zurückblicken. Ihr fester Ansprechpartner
+          kümmert sich dabei kontinuierlich um Ihre Anliegen – zuverlässig und
+          langfristig! Wir legen großen Wert darauf, die mit Ihnen vereinbarten
+          Standards konsequent einzuhalten. Unser kontinuierlicher Erfolg
+          bestätigt diese Philosophie.
+        </p>
+      </div>
+    </div>
+    <div class="social-container">
+      <div class="social-container">
+      <button class="social-buttons">
+        <i class="fa-solid fa-phone"></i>
+        <span class="social-icon">
+          <a href="tel:01732765432">01732765432</a>
+        </span>
+        <button class="social-buttons">
+        <i class="fa-solid fa-envelopes-bulk"></i>
+        <span class="social-icon">
+          <a href="mailto:a.hachem@gmx.de">a.hachem@gmx.de</a>
+        </span>
+      </button>
+      <button class="social-buttons">
+        <i class="fa-brands fa-facebook"></i>
+        <span class="social-icon">
+          <a
+            href="https://www.facebook.com/TERO-System-Rohrbau-GmbH-252313164955897/?fref=ts"
+          >
+            facebook.com</a
+          >
+        </span>
+      </button>
+    </div>
+    </div>
+    <hr>
+    <div class="container-fluid d-flex justify-content-between footer align-items-center">
+    2024 Reinigungsservice Hachem – Alle Rechte vorbehalten. <br>
+    <a class="text-decoration-none footer-link" href="impressum.html">Impressum</a> | <a  class="text-decoration-none footer-link" href=" datenschutz.html"> Datenschutz</a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

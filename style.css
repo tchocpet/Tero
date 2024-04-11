@@ -1,0 +1,288 @@
+body {
+  padding: 25px;
+  background-color: white;
+  color: fff(30, 6, 6);
+  font-size: 25px;
+}
+.dark-mode {
+  background-color: rgba(8, 4, 4, 0.914);
+  color: white;
+}
+.card-darkmode {
+  color: black;
+}
+.logo {
+  width: 300px;
+  height: 5rem;
+}
+.submenu {
+  display: none;
+  margin-top: -10px;
+  position: fixed;
+  z-index: 1;
+  background-color: aliceblue;
+}
+.submenu-mobile {
+  display: none;
+}
+.submenu-mobile > .a-submenu > p {
+  padding: 1rem;
+}
+.submenu-content {
+  padding: 1rem;
+}
+.submenu-item {
+  padding: 2rem;
+  height: 4rem;
+  width: 100%;
+}
+.main-body {
+  margin-top: 5rem;
+}
+.main-body-diensleitungen {
+  margin-top: 5rem;
+}
+.carousel-image {
+  height: 50rem;
+  object-position: center;
+  object-fit: cover;
+}
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.nav-link {
+  font-size: 1.25rem;
+  height: 6.1rem;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-link-btn:hover {
+  text-shadow: 1px 1px black;
+}
+#dienstleistungen {
+  height: 100%;
+}
+.left-menü {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+.right-menü {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.custom-icons {
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+.custom-icons-img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+.custom-img-container {
+  padding-right: 1rem;
+}
+.img-icon {
+  padding-right: 1rem;
+}
+.a-submenu {
+  text-decoration: none;
+  color: black;
+}
+.a-submenu:hover {
+  color: rgb(95, 80, 255);
+}
+.card-title {
+  color: rgb(86, 80, 255);
+  font-size: 32px;
+}
+.card-body-home {
+  height: 350px;
+  overflow: auto;
+  transition: none;
+}
+.service-image {
+  width: 100%;
+}
+svg path {
+  fill: blue;
+}
+svg {
+  height: 2rem;
+  width: 2rem;
+}
+.service-container {
+  padding: 5rem;
+}
+.contact-card {
+  height: 20rem;
+  padding: 1.5rem;
+}
+.kreuz {
+  color: coral;
+  font-size: 1.5rem;
+}
+.qr-code {
+  width: 20rem;
+  height: 20rem;
+}
+.qr-name {
+  color: #61df90;
+  font-size: 1.5rem;
+}
+.kreuz-datei {
+  font-size: 2rem;
+}
+.datei-name {
+  width: 100%;
+  border: 1px solid #dadada;
+}
+.submit-name {
+  padding-right: 2rem;
+  width: auto;
+}
+.full-width-image {
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.home-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.Zeichen {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(0, 17, 255);
+  border-radius: 50%;
+}
+.angebot-image {
+  object-position: center top;
+}
+.stelle-head {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.stellenangebot-input {
+  position: relative;
+}
+.input-stelle {
+  position: relative;
+}
+.ueber-uns-image {
+  width: 90%;
+}
+.vision-tittle {
+  letter-spacing: 5px;
+}
+.ueber-uns-image-column {
+  width: 70%;
+}
+.image-container {
+  overflow: hidden;
+  padding: 0rem 5rem;
+  gap: 2rem;
+}
+.job-position {
+  width: 100%;
+}
+.job-item {
+  border: 1px solid #b8bcc9f0;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+}
+.input-container {
+  position: relative;
+}
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 1.25rem;
+}
+.stellenangebot-input {
+  padding-left: 3rem;
+  height: 4rem;
+  width: 100%;
+}
+.input-stelle {
+  width: 100%;
+}
+.search-btn {
+  width: 70%;
+
+  font-size: 1.5rem;
+}
+.social-container {
+  position: fixed;
+  top: 50%;
+  right: 0rem;
+  transform: translateY(-50%);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+.social-buttons > i {
+  font-size: 2rem;
+}
+.social-buttons {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #eae3e3;
+  color: #2023d6;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 20px;
+  width: 4rem;
+  overflow: hidden;
+}
+.social-icon {
+  width: 7rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+.social-icon > a {
+  text-decoration: none;
+  color: #204bd6;
+  font-size: 1.5rem;
+}
+.social-buttons:hover {
+  background-color: rgb(236, 229, 229);
+  width: 20rem;
+  transition: width 0.5s ease;
+}
+.theme-icon {
+  width: 3rem;
+  height: 3rem;
+}
+.footer {
+  background-color: #204bd6;
+  color: white;
+  height: 10rem;
+}
+.footer-link {
+  color: #dadada;
+}
+
+@media (max-width: 992px) {
+  .custom-nav-bar {
+    position: relative;
+  }
+}
