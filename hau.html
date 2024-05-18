@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Büroreinigung</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/fc2b2583ee.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light custom-nav-bar p-0 fixed-top bg-light"
+    >
+      <div class="container-fluid p-0">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="./img/Logo.jpg" alt="logo" />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse p-0" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-btn"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-btn"
+                aria-current="page"
+                href="home.html"
+                >Über uns</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-btn" href="#" id="dienstleistungen"
+                >Dienstleistungen</a
+              >
+            </li>
+            <div class="submenu-mobile" id="submenu-mobile">
+              <a href="trepp.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-house-chimney custom-icons"></i>
+                  </span>
+                  Büroreinigung
+                </p>
+              </a>
+              <a href="glasfenster.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-regular fa-window-maximize custom-icons"></i>
+                  </span>
+                  Glas-und Fensterreinugung
+                </p>
+              </a>
+              <a href="grundsonder.html" class="a-submenu">
+                <p>
+                  <span class="custom-img-container">
+                    <img class="custom-icons-img" src="./img/son.png" alt="" />
+                  </span>
+                  Grund-und Sonderreinigung
+                </p>
+              </a>
+              <a href="trepp.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-stairs custom-icons"></i>
+                  </span>
+                  Treppenhausreinigung
+                </p>
+              </a>
+              <a href="grue.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-sun-plant-wilt custom-icons"></i>
+                  </span>
+                  Grünanlagenpflege
+                </p>
+              </a>
+              <a href="hau.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-user-gear custom-icons"></i>
+                  </span>
+                  Hausmeisterservice
+                </p>
+              </a>
+              <a href="ind.html" class="a-submenu">
+                <p>
+                  <span>
+                    <i class="fa-solid fa-screwdriver-wrench custom-icons"></i>
+                  </span>
+                  Industriereinigung
+                </p>
+              </a>
+              <a href="bauend.html" class="a-submenu">
+                <p>
+                  <span class="custom-img-container">
+                    <img
+                      class="custom-icons-img"
+                      src="./img/bauend.png"
+                      alt=""
+                    />
+                  </span>
+                  Bauendreinigung
+                </p>
+              </a>
+              <div
+                class="col-lg-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="card" style="width: 18rem">
+                  <img src="./img/kontakt.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">
+                      Ist Ihre Anfrage hier nicht aufgeführt, so kontaktieren
+                      Sie uns:
+                    </p>
+                    <a href="#" class="btn btn-primary">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" id="branchenlösungen" href="kontakt.html"
+                >Kontakt</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="ange.html"
+                tabindex="-1"
+                aria-disabled="true"
+                >Karriere</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-body-diensleitungen">
+      <div class="container d-flex justify-content-center">
+        <div class="submenu container p-2" id="submenu">
+          <div class="container">
+            <div class="row submenu-content">
+              <div class="col-lg-4 left-menü">
+                <a href="buero.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-house-chimney custom-icons"></i>
+                    </span>
+                    Büroreinigung
+                  </p>
+                </a>
+                <a href="glasfenster.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-regular fa-window-maximize custom-icons"></i>
+                    </span>
+                    Glas-und Fensterreinugung
+                  </p>
+                </a>
+                <a href="trepp.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-stairs custom-icons"></i>
+                    </span>
+                    Treppenhausreinigung
+                  </p>
+                </a>
+                <a href="grundsonder.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span class="img-icon">
+                      <img
+                        class="custom-icons-img"
+                        src="./img/son.png"
+                        alt=""
+                      />
+                    </span>
+                    Grund-und-Sonderreinigung
+                  </p>
+                </a>
+              </div>
+              <div class="col-lg-4 right-menü">
+                <a href="grünanlagenpflege.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-sun-plant-wilt custom-icons"></i>
+                    </span>
+                    Grünanlagenpflege
+                  </p>
+                </a>
+                <a href="hau.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i class="fa-solid fa-user-gear custom-icons"></i>
+                    </span>
+                    Hausmeisterservice
+                  </p>
+                </a>
+                <a href="ind.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span>
+                      <i
+                        class="fa-solid fa-screwdriver-wrench custom-icons"
+                      ></i>
+                    </span>
+                    Industriereinigung
+                  </p>
+                </a>
+
+                <a href="bauend.html" class="a-submenu">
+                  <p class="submenu-item">
+                    <span class="img-icon">
+                      <img
+                        class="custom-icons-img"
+                        src="./img/bauend.png"
+                        alt=""
+                      />
+                    </span>
+                    Bauendreinigung
+                  </p>
+                </a>
+              </div>
+              <div
+                class="col-lg-4 d-flex justify-content-center align-items-center"
+              >
+                <div class="card" style="width: 18rem">
+                  <img src="./img/kontakt.jpg" class="card-img-top" alt="..." />
+                  <div class="card-body">
+                    <h5 class="card-title">Sonstiges</h5>
+                    <p class="card-text">
+                      Ist Ihre Anfrage hier nicht aufgeführt, so kontaktieren
+                      Sie uns:
+                    </p>
+                    <a href="#" class="btn btn-primary">Kontakt</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <h1 class="text-center">Hausmeisterservice</h1>
+
+        <div class="row mt-5">
+          <div class="col-xl-6 col-lg-12 d-flex justify-content-center p-2">
+            <img src="./img/phote2.jpg" class="ueber-uns-image" alt="" />
+          </div>
+          <div
+            class="col-xl-6 col-lg-12 p-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <p>
+              Unser Handwerkerservice agiert als kompetenter und verlässlicher
+              <b> Hausmeister</b> für Objekte jeglicher Größe. Mit unserer
+              Kommunikationsbereitschaft und blitzschnellen Problemlösungen
+              stehen wir Hausverwaltungen und Mietern jederzeit zur Verfügung,
+              um ihre Anliegen zu adressieren. Wir sind nicht nur darauf
+              spezialisiert, Ihre Immobilie makellos zu halten, sondern verfügen
+              auch über ein umfangreiches Netzwerk an qualifizierten
+              Handwerkern. Dank dieses Netzwerks können wir auf eine Vielzahl
+              von Fachkräften zurückgreifen, um Probleme jeder Art rasch und
+              effizient zu lösen. Unsere umfassende Objektbetreuung schafft
+              nicht nur Mehrwert für Ihre Mieter, sondern trägt auch zum
+              langfristigen Werterhalt der Immobilie bei.
+            </p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div
+            class="col-xl-6 col-lg-12 p-5 d-flex flex-column justify-content-center align-items-center"
+          >
+            <div>
+              <h3 class="text-dark">
+                Ein Auszug aus unseren meist genutzten Haumeistertätigkeiten:
+              </h3>
+              <ul>
+                <li>
+                  <b>Instandhaltungsarbeiten:</b>
+                  Wir kümmern uns darum, kleine Defekte sofort zu beheben, bevor
+                  sie zu größeren Problemen werden.
+                </li>
+                <li>
+                  <b>Hof- und Gehwegreinigung:</b>
+                  Von Müllentsorgung bis zur Unkrautbekämpfung - wir halten Ihre
+                  Wege und Höfe gepflegt.
+                </li>
+                <li>
+                  <b>Gartenarbeiten:</b>
+                  Wir bieten eine Vielzahl von Gartenpflegediensten an, um Ihre
+                  Immobilie einladender zu gestalten.
+                </li>
+                <li>
+                  <b>Beleuchtungs-Instandhaltung:</b>
+                  Von Glühbirnenwechseln bis zur effizienten Nutzung von
+                  LED-Technologie - wir kümmern uns um Ihre Beleuchtung.
+                </li>
+                <li>
+                  <b>Kontrolle des Objektzustandes:</b>
+                  Wir bieten eine kontinuierliche Gesamtzustandsbewertung Ihrer
+                  Immobilie, um Reparatur- und Renovierungsbedarf frühzeitig zu
+                  erkennen.
+                </li>
+                <li>
+                  <b>Zählerstandsüberwachnung:</b>
+                  Mit unseren Diensten behalten Sie stets den Überblick über
+                  alle Zählerstände, ideal für Ihre Finanzplanung.
+                </li>
+                <li>
+                  <b>Sanitär- und Elektroarbeiten:</b>
+                  Von verstopften Toiletten bis hin zu defekten Steckdosen - wir
+                  greifen auf unseren zuverlässigen Fachkräfte-Pool zurück, um
+                  schnelle Reaktionen und Mieterzufriedenheit zu gewährleisten.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-12 d-flex justify-content-center p-2">
+            <img src="./img/photo1.jpg" class="ueber-uns-image" alt="" />
+          </div>
+        </div>
+        <hr />
+        <div class="row mt-5">
+          <div class="col-xl-6 col-lg-12 d-flex justify-content-center p-2">
+            <img src="./img/photo3.jpg" class="ueber-uns-image" alt="" />
+          </div>
+          <div
+            class="col-xl-6 col-lg-12 p-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h3 class="text-dark">
+              Sie bestimmen den Ablauf, wir das Ergebnis.
+            </h3>
+            <p>
+              Geben Sie uns einfach die Adresse Ihres Objektes sowie Ihre
+              gewünschten Hausmeistertätigkeiten bekannt. Anschließend erstellen
+              wir einen maßgeschneiderten Leistungskatalog, der in Form eines
+              unverbindlichen Angebots an Sie übermittelt wird. Sobald Ihnen
+              dieses zusagt, kann der Hausmeisterservice von Reinigungsservice
+              Hachem bei Ihnen starten.
+            </p>
+            <h5 class="text-primary fw-bold">
+              Sprechen Sie uns gerne an. Wir bringen Ihr Ojekt zum Strahlen.
+            </h5>
+            <p>
+              <a class="btn btn-primary" href="kontakt.html">KONTAKTBUTTON</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="social-container">
+      <div class="social-container">
+      <button class="social-buttons">
+        <i class="fa-solid fa-phone"></i>
+        <span class="social-icon">
+          <a href="tel:01732765432">01732765432</a>
+        </span>
+        <button class="social-buttons">
+        <i class="fa-solid fa-envelopes-bulk"></i>
+        <span class="social-icon">
+          <a href="mailto:a.hachem@gmx.de">a.hachem@gmx.de</a>
+        </span>
+      </button>
+      <button class="social-buttons">
+        <i class="fa-brands fa-facebook"></i>
+        <span class="social-icon">
+          <a
+            href="https://www.facebook.com/TERO-System-Rohrbau-GmbH-252313164955897/?fref=ts"
+          >
+            facebook.com</a
+          >
+        </span>
+      </button>
+    </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-between footer align-items-center">
+    2024 Reinigungsservice Hachem – Alle Rechte vorbehalten. <br>
+    <a class="text-decoration-none footer-link" href="impressum.html">Impressum</a> | <a  class="text-decoration-none footer-link" href=" datenschutz.html"> Datenschutz</a>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
