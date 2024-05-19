@@ -35,3 +35,40 @@ document.getElementById("themeIcon").onclick = function () {
     i.classList.add("card-darkmode");
   });
 };
+
+
+// Handling the form submission and preparing data to send the email
+
+document.getElementById('contact-form').addEventListener('submit', async function(event) {
+  event.preventDefault();
+
+  const formData = new FormData(this);
+
+  for (let [key, value] of formData.entries()) {
+      console.log(`${key}: ${value}`);
+  }
+
+  try {
+      const response = await fetch('http://localhost:3000/send-email', {
+          method: 'POST',
+          body: formData,
+      });
+
+      console.log('Response status:', response.status);
+      console.log('Response status text:', response.statusText);
+
+      if (response.ok) {
+          const successMessage = await response.json();
+          console.log('Response message:', successMessage);
+          alert('Email sent successfully!');
+      } else {
+          // Handle non-200 responses
+          const errorText = await response.text();
+          console.error('Response error:', errorText);
+      }
+  } catch (error) {
+      // Log fetch error to console but do not alert user
+      console.error('Fetch error:', error);
+  }
+});
+

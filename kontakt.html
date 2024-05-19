@@ -326,105 +326,66 @@
         ></iframe>
       </div>
 
-      <form class="container p-5">
-        <div>
-          <label class="form-label" for="firma">Firma:</label>
-          <input class="form-control" id="firma" type="text" />
-        </div>
-        <div class="py-2">
-          <div>
-            <label class="form-label" for="anrede">Anrede:</label>
-          </div>
 
-          <div class="form-check form-check-inline">
-            <input
-              name="anrede"
-              value="herr"
-              id="herr"
-              class="form-check-input"
-              type="radio"
-            />
-            <label class="form-check-label" for="herr">Herr</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              name="anrede"
-              value="frau"
-              id="frau"
-              class="form-check-input"
-              type="radio"
-            />
-            <label class="form-check-label" for="frau">Frau</label>
-          </div>
-          <div class="form-check form-check-inline">
-            <input
-              name="anrede"
-              value="divers"
-              id="divers"
-              class="form-check-input"
-              type="radio"
-            />
-            <label class="form-check-label" for="divers">Divers</label>
-          </div>
-        </div>
+      <form class="container form-box p-5" id="contact-form" action="http://localhost:3000/send-email" method="post" enctype="multipart/form-data">
+        <h2 class="text-center mb-2">Kontakt Formula</h2>
         <div>
-          <label class="form-label" for="name"
-            >Name:<span class="kreuz">*</span></label
-          >
-          <input class="form-control" id="name" type="text" />
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <label class="form-label" for="name"
-              >Straße.Nr.:<span class="kreuz"></span
-            ></label>
-            <input class="form-control" id="name" type="text" />
-          </div>
-          <div class="col-lg-6">
-            <label class="form-label" for="name"
-              >PLZ, Ort:<span class="kreuz"></span
-            ></label>
-            <input class="form-control" id="name" type="text" />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6">
-            <label class="form-label" for="name"
-              >Telefon:<span class="kreuz"></span
-            ></label>
-            <input class="form-control" id="name" type="text" />
-          </div>
-          <div class="col-lg-6">
-            <label class="form-label" for="name"
-              >E-Mail:<span class="kreuz">*</span></label
-            >
-            <input class="form-control" id="name" type="text" />
-          </div>
-        </div>
-        <div>
-          <label class="form-label" for="comment"
-            >Ihre Nachricht:<span class="kreuz">*</span></label
-          >
-          <textarea
-            class="form-control"
-            name="comment"
-            id="comment"
-            rows="10"
-          ></textarea>
+            <label class="form-label" for="firma">Firma:</label>
+            <input class="form-control" id="firma" name="firma" type="text" />
         </div>
         <div class="py-2">
-          <p class="kreuz-datei">Dateiupload:</p>
-          <input
-            class="datei-name p-2"
-            type="file"
-            id="myFile"
-            name="filename"
-          />
-          <input class="submit-name btn btn-primary my-2" type="submit" />
+            <div>
+                <label class="form-label">Anrede:</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input name="anrede" value="herr" id="herr" class="form-check-input" type="radio" />
+                <label class="form-check-label" for="herr">Herr</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input name="anrede" value="frau" id="frau" class="form-check-input" type="radio" />
+                <label class="form-check-label" for="frau">Frau</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input name="anrede" value="divers" id="divers" class="form-check-input" type="radio" />
+                <label class="form-check-label" for="divers">Divers</label>
+            </div>
         </div>
-      </form>
-      <div class="container mt-2">
-        <h1 class="text-center text-primary">Kontakt.:</h1>
+        <div>
+            <label class="form-label" for="name">Name:<span class="kreuz">*</span></label>
+            <input class="form-control" id="name" name="name" type="text" />
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label class="form-label" for="strasse">Straße.Nr.:<span class="kreuz"></span></label>
+                <input class="form-control" id="strasse" name="strasse" type="text" />
+            </div>
+            <div class="col-lg-6">
+                <label class="form-label" for="plz">PLZ, Ort:<span class="kreuz"></span></label>
+                <input class="form-control" id="plz" name="plz" type="text" />
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <label class="form-label" for="telefon">Telefon:<span class="kreuz"></span></label>
+                <input class="form-control" id="telefon" name="telefon" type="text" />
+            </div>
+            <div class="col-lg-6">
+                <label class="form-label" for="email">E-Mail:<span class="kreuz">*</span></label>
+                <input class="form-control" id="email" name="email" type="email" />
+            </div>
+        </div>
+        <div>
+            <label class="form-label" for="comment">Ihre Nachricht:<span class="kreuz">*</span></label>
+            <textarea class="form-control" name="comment" id="comment" rows="10"></textarea>
+        </div>
+        <div class="py-2">
+            <p class="kreuz-datei" for="filename">Dateiupload:</p>
+            <input class="datei-name p-2" type="file" id="filename" name="filename" />
+            <input class="submit-name btn btn-primary my-2" type="submit" />
+        </div>
+    </form>
+      <div class="container mt-4">
+        <h1 class="text-center text-primary">Kontakt:</h1>
         <p>
           Unsere Zusammenarbeit: Unmittelbar nach Ihrer Anfrage oder
           Auftragserteilung erhalten Sie von uns eine persönliche Rückmeldung.
